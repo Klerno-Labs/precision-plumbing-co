@@ -34,7 +34,7 @@ const ContactForm = () => {
       <label htmlFor="message">Message</label>
       <textarea id="message" required onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
       <button type="submit" disabled={isSubmitting}>Send</button>
-      {isSuccess && <p>Thank you! We'll be in touch within 24 hours.</p>}
+      {isSuccess && <p>Thank you! We&apos;ll be in touch within 24 hours.</p>}
       {error && <p>{error}</p>}
     </form>
   );
